@@ -27,7 +27,8 @@ Here is a description of the final dataset after cleaning and processing.
 
 - Pageview API has the ability to filter out views from spiders/crawlers, while the Legacy Pagecounts API does not have such abilities. 
 - There was about 1 year of overlapping traffic data between the two APIs, and data from both APIs in the 1 year of overlapping period is included.
-
+- 0 data is reverted back to null values when graphing to capture the essence of the missing data. The views are not actually zero, even when there is no data. It is rather the fact that the certain API at certain point does not have the capacity to capture certain traffic.
+- The background is the graph is set to clear to be as flexible as possible, but it can be easily changed in Matplotlib.
 
 ## API
 
