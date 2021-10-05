@@ -10,13 +10,17 @@ The data are monthly English Wikipedia traffic data from Wikimedia Foundation fr
 - Missing data (data without any entries from API calls) is replaced with 0.
 
 Here is a description of the final dataset after cleaning and processing.
-|Column|Value|Description|Mapping from the API calls|
-|-|-|-|-|
-|Year|YYYY|This is the year of traffic data.|The first four digits of the timestamp|
-|Month|MM|This is the month of traffic data.|The 5-6th digits of the timestamp|
-|pagecount_all_views|Number of views|This is the total number of views from the Legacy Pagecount API in a month.|count from pagecount desktop + mobile|
-|pagecount_desktop_views|Number of views|This is the desktop traffic from the Legacy Pagecount API in a month.|count from pagecount desktop|
-|pagecount_mobile_views|Number of views|This is the mobile traffic from the Legacy Pagecount API in a month.|count from pagecount mobile|
+|Column|API|Value|Description|Mapping from the API calls|
+|-|-|-|-|-|
+|Year|Both|YYYY|BThis is the year of traffic data.|The first four digits of the timestamp|
+|Month|Both|MM|This is the month of traffic data.|The 5-6th digits of the timestamp|
+|pagecount_all_views|Legacy Pagecount API|Number of views|This is the total number of views from the Legacy Pagecount API in a month.|count from pagecount desktop + mobile|
+|pagecount_desktop_views|Legacy Pagecount API|Number of views|This is the desktop traffic from the Legacy Pagecount API in a month.|count from pagecount desktop|
+|pagecount_mobile_views|Legacy Pagecount API|Number of views|This is the mobile traffic from the Legacy Pagecount API in a month.|count from pagecount mobile|
+|pageview_all_views|Pageview API|Number of views|This is the total number of views from the Pageview API in a month.|views from pagecount desktop + mobile app + mobile web|
+|pageview_desktop_views|Pageview API|Number of views|This is the desktop traffic from the Pageview API in a month.|views from pagecount desktop|
+|pageview_mobile_views|Pageview API|Number of views|This is the mobile traffic from the Pageview API in a month.|views from pagecount mobile app + mobile web|
+
 
 
 ## Known Issues
