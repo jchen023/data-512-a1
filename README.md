@@ -1,9 +1,9 @@
 ## Goal
-The purpose of the project is to demonstrate that I can follow best practices for open scientific research in designing and implementing your project, and make your project fully reproducible by others: from data collection to data analysis through analyzing the English Wikipedia monthly traffic from January 2008 through August 2021. The project instruction is provided [here](https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#).
+The purpose of the project is to demonstrate that students can follow best practices for open scientific research in designing and implementing the project, and make their projects fully reproducible by others: from data collection to data analysis through analyzing the English Wikipedia monthly traffic from January 2008 through August 2021. The project instruction is provided [here] by the University of Washington.(https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#).
 
 
 ## Data Description
-The data are monthly English Wikipedia traffic data from Wikimedia Foundation from 2008-2021. The data is retrieved using two API 
+The data consists of monthly English Wikipedia traffic data from Wikimedia Foundation from 2008-2021. The data is retrieved using two API:
 - [Legacy Pagecounts](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts): January 2017 through July 2016; has desktop and mobile data. Mobile data doesn't start Oct 2014.
 - [Pageviews](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews): July 2015 onwards; has desktop, mobile web and mobile app data
 - Raw data from Legacy Pagecounts include both spider/crawler and user visitation data, while Pageviews data in the raw folder has filtered out spider/crawler traffic.
@@ -27,8 +27,9 @@ Here is a description of the final dataset after cleaning and processing.
 
 - Pageview API has the ability to filter out views from spiders/crawlers, while the Legacy Pagecounts API does not have such abilities. 
 - There was about 1 year of overlapping traffic data between the two APIs, and data from both APIs in the 1 year of overlapping period is included.
-- 0 data is reverted back to null values when graphing to capture the essence of the missing data. The views are not actually zero, even when there is no data. It is rather the fact that the certain API at certain point does not have the capacity to capture certain traffic.
-- The background is the graph is set to clear to be as flexible as possible, but it can be easily changed in Matplotlib.
+- Mobile data before Oct 2014 is not available.
+- 0 values were reverted back to null values when graphing to capture the essence of the missing data. The views were not actually zero, even when there was no data.
+- The background of the graph was set to blank, but it can be easily changed in Matplotlib based on user preference.
 
 ## API
 
