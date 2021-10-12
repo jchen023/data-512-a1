@@ -1,5 +1,5 @@
 ## Goal
-The purpose of the project is to demonstrate that students can follow best practices for open scientific research in designing and implementing the project, and make their projects fully reproducible by others: from data collection to data analysis through analyzing the English Wikipedia monthly traffic from January 2008 through August 2021. The project instruction is provided [here] by the University of Washington.(https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#).
+The purpose of the project is to demonstrate that students can follow best practices for open scientific research in designing and implementing the project, and make their projects fully reproducible by others: from data collection to data analysis through analyzing the English Wikipedia monthly traffic from January 2008 through August 2021. The project instruction is provided [here](https://docs.google.com/document/d/1groRZyhgOwBxlSyE4vKEhYa-khKet8iWVaVDAgOH_Y4/edit#) by the University of Washington.
 
 
 ## Data Description
